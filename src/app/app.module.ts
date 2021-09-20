@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { ShoppingListService } from 'src/app/shopping-list/shopping-list.service';
 import { DropdownDirective } from 'src/app/shared/dropdown.directive';
 
 import { BrowserModule } from '@angular/platform-browser';
@@ -31,7 +32,7 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ShoppingListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
